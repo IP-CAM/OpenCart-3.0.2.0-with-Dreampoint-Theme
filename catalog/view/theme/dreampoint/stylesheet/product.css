@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'LetoSans';
+  src: url('/catalog/view/theme/dreampoint/font/LetoSans-Bold.eot');
+  src: url('/catalog/view/theme/dreampoint/font/LetoSans-Bold.eot?#iefix') format('embedded-opentype'), url('/catalog/view/theme/dreampoint/font/LetoSans-Bold.woff2') format('woff2'), url('/catalog/view/theme/dreampoint/font/LetoSans-Bold.woff') format('woff'), url('/catalog/view/theme/dreampoint/font/LetoSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LetoSans';
+  src: url('/catalog/view/theme/dreampoint/font/LetoSans-Thin.eot');
+  src: url('/catalog/view/theme/dreampoint/font/LetoSans-Thin.eot?#iefix') format('embedded-opentype'), url('/catalog/view/theme/dreampoint/font/LetoSans-Thin.woff2') format('woff2'), url('/catalog/view/theme/dreampoint/font/LetoSans-Thin.woff') format('woff'), url('/catalog/view/theme/dreampoint/font/LetoSans-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LetoSans';
+  src: url('/catalog/view/theme/dreampoint/font/LetoSans.eot');
+  src: url('/catalog/view/theme/dreampoint/font/LetoSans.eot?#iefix') format('embedded-opentype'), url('/catalog/view/theme/dreampoint/font/LetoSans.woff2') format('woff2'), url('/catalog/view/theme/dreampoint/font/LetoSans.woff') format('woff'), url('/catalog/view/theme/dreampoint/font/LetoSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.radio label {
+  font-size: 16px;
+  min-width: 170px;
+}
+.radio.active {
+  border: 1px solid #1c8ac2;
+}
+.btn-group.price-group {
+  display: block;
+}
+.addthis_toolbox {
+  display: none;
+}
+
+/*# sourceMappingURL=product.css.map */

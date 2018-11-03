@@ -1,0 +1,71 @@
+@import "set";
+
+
+/* NAV START */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: @blue_text !important;
+  @media (max-width: 835px) {
+    justify-content: space-between;
+    margin: 0 -15px;
+    border-radius: 0 !important;
+    &:after, &:before {
+      display: none;
+    }
+    &-header {
+      margin-left:auto;
+    }
+  }
+
+
+  &__logo {
+    vertical-align: bottom;
+  }
+  &-collapse.collapse {
+    display: inline-block !important;
+    //@media (max-width: 785px) {
+    //  display: none !important;
+    //}
+    //font-family: Arial;
+    font-size: 18px;
+  }
+
+
+}
+
+
+.navbar-nav {
+  font-size:18px;
+}
+
+.btn-navbar {
+  font-size: 20px;
+}
+
+.collapse.in {
+  //поаказываем
+  border-top: 1px solid white;
+  .navbar-nav {
+    display: block;
+  }
+}
+
+.collapse  {
+  //не показываем
+  @media (max-width: 835px) {
+    width:100%;
+    .navbar-nav {
+      display: none;
+    }
+  }
+}
+.collapsing {
+  @media (max-width: 835px) {
+    width: 100%;
+  }
+}
+
+/* NAV END */

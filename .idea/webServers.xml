@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="82e2af5e-91f0-4361-9d1e-320762b7f39e" name="dreampoint" url="http://moesha.timeweb.ru">
+        <fileTransfer host="moesha.timeweb.ru" port="21" rootFolder="/opencart_6/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

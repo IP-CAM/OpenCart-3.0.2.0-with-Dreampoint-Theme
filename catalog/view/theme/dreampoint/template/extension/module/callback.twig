@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 col-sm-offset-1 col-sm-10 col-xs-12 text-center">
+      <div class="callback__title">Как купить?</div>
+    <div class="callback">
+
+
+      {% if module_callback_title %}
+        <div class="cb-title">
+          {{ module_callback_title }}
+        </div>
+      {% endif %}
+      <div class="callback__delivery">Доставка в любую <br>точку города</div>
+      <div class="row callback__item">
+<!--        <div class="col-sm-4 col-xs-12">-->
+<!--          <input type="text" name="name" placeholder="{{ entry_name }}" autocomplete="off" value="" class="input-name" required="required" pattern=".{3,}">-->
+<!--        </div>-->
+        <div class="col-sm-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+          <input type="tel" name="phone" placeholder="{{ entry_phone }}" autocomplete="off" value="" class="input-phone" required="required">
+        </div>
+      </div>
+       <div class="row">
+<!--        <div class="col-sm-4 col-xs-12">-->
+        <div class="col-sm-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="fcallback">{{ module_callback_button }}</div>
+        </div>
+
+
+      </div>
+        <div class="callback__text">Ваши данные в безопасности<br>
+            и не будут переданы 3-им лицам</div>
+      <div class="ok-message"></div>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          {% if module_callback_mask %}
+            $(".input-phone").mask("{{ module_callback_mask }}");
+          {% endif %}
+          $(".fcallback").on('click', function() {
+            var name = $('.input-name').val();
+            var phone = $('.input-phone').val();
+            var email = "{{ config_email }}";
+            if(name!=''&&phone!=''){
+                  $.ajax({
+                    type: "GET",
+                    url: "/catalog/controller/extension/module/callback-sender.php",
+                    data: 'name='+name+'&phone='+phone+'&email='+email,
+                    success: function() {
+                          $('.ok-message').html('{{ entry_ok }}');
+                          setTimeout(function() { $('.ok-message').html(''); }, 2000)
+                      }
+                  });
+              } else {
+                $('.ok-message').html('{{ entry_error }}');
+                setTimeout(function() { $('.ok-message').html(''); }, 2000)
+              }
+            });
+        })
+      </script>
+    </div>
+
+      <div class="sleep">
+          <img class="sleep__logo" src="/image/catalog/dreampoint/logo.jpg" alt="">
+          <div class="sleep__text">
+              здоровый сон покупают здесь<br>
+              от 20 копеек за ночь
+          </div>
+      </div>
+  </div>
+</div>

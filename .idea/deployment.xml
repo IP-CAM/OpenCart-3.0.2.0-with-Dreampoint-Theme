@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="dreampoint" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="dreampoint">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/cgi-bin" />
+            <excludedPath path="/system" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="growtalent">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="timeweb">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/opencart_5/public_html/cgi-bin" />
+            <excludedPath path="/opencart_5/public_html/image" />
+            <excludedPath path="/opencart_5/public_html/system" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cgi-bin" />
+            <excludedPath local="true" path="$PROJECT_DIR$/image" />
+            <excludedPath local="true" path="$PROJECT_DIR$/system" />
+            <excludedPath local="true" path="$PROJECT_DIR$/node_modules" />
+            <excludedPath path="/node_modules" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
